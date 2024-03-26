@@ -37,7 +37,7 @@ const iterator = array[Symbol.iterator]();
 console.log('next' in iterator); // true
 ```
 
-\*\* array[Symbol.iterator]() 이 부분! 이 부분은 대괄호 표기법을 사용해 Symbol.iterator을 호출한 것으로 Symbol.iterator가 메소드니까 ()로 바로 실행했다.
+※ `array[Symbol.iterator]()` 이 부분! 이 부분은 대괄호 표기법을 사용해 Symbol.iterator을 호출한 것으로 Symbol.iterator가 메소드니까 ()로 바로 실행했다.
 
 </br>
 
