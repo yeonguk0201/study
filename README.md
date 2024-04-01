@@ -10,3 +10,4 @@
 - [데이터 타입과 변수](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/DataType&Variable.md)
 - [연산자](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/operator.md)
 - [반복문](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/controlFlow.md)
+- [타입 변환과 단축 평가](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/type.md)

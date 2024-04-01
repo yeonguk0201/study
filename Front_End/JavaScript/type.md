@@ -74,6 +74,148 @@ let ssttrr = 10 + '';
 <br>
 
 - 명시적 타입 변환
-  1. String() 생성자 함수
-  2. .toString()
-  3. 문자열 연결 연산자 이용용
+  - 문자열 변환
+    1. String() 생성자 함수
+    2. .toString()
+    3. 문자열 연결 연산자 이용
+    ```javascript
+    console.log(String(1)); // "1"
+    console.log(NaN.toString()); // "NaN"
+    console.log(Infinity + ''); // "Infinity"
+    ```
+  - 숫자로 변환
+    1. Number() 생성자 함수
+    2. parseInt, parseFloat
+    3. 단항 연결, 산술 연산자 사용
+    ```javascript
+    console.log(Number('0')); // 0
+    console.log(parseFloat('10.53')); // 10.53
+    console.log(+false); // 0
+    console.log(true * 1); // 1
+    console.log('-1' * 1); // -1
+    ```
+  - 불리언 타입으로 변환
+    1. Boolean() 생성자 함수
+    2. !부정 논리 연산자 두 번 사용
+    ```javascript
+    console.log(Boolean('')); // false
+    console.log(Boolean('false')); // true
+    console.log(Boolean('x')); // true
+    console.log(Boolean('')); // false
+    console.log(Boolean('false')); // true
+    ```
+
+근데 여기 +연산자가 명시에도 나오고 암묵에도 나오는데 내 생각엔 암묵적 변환을 명시적으로 활용함으로서 명시적이라고 한 것 같다.
+
+<br>
+<br>
+
+2. 단축 평가
+
+- 논리 연산자를 사용한 단축 평가
+  논리합 || 또는 논리곱 &&의 평가 결과는 불리언 값이 아닐 수 있다. 언제나 2개의 피연산자 중 어느 한쪽으로 평가된다.
+
+  ```javascript
+  'Cat' && 'Dog'; // "Dog"
+  'Cat' || 'Dog'; // "Cag"
+  ```
+
+  이렇게 논리곱 연산자는 좌에서 우로 진행되고 두 개 모두 true로 평가되야 true를 반환한다.
+  'Cat'은 Truthy 값으로 true로 평가되기 때문에 true && 'DOG 이렇게 돼서 'Dog'를 반환한다.
+  논리합 연산자도 좌에서 우로 평가되지만 두 개중 하나만 true여도 true를 반환하니까 'Cat'을 반환한다.
+  이처럼 논리 연산의 결과를 결정하는 피연산자를 타입 변환하지 않고 그대로 반환하는 것을 **단축 평가**라고 한다.
+
+  ```javascript
+  // 논리합(||) 연산자
+  'Cat' || 'Dog'; // 'Cat'
+  false || 'Dog'; // 'Dog'
+  'Cat' || false; // 'Cat'
+
+  // 논리곱(&&) 연산자
+  'Cat' && 'Dog'; // Dog
+  false && 'Dog'; // false
+  'Cat' && false; // false
+  ```
+
+  단축 평가로 if문을 대체할 수 있다.
+
+  ```javascript
+  let done = true;
+  let message = '';
+
+  // 주어진 조건이 true
+  if (done) message = '완료';
+
+  // if 문은 단축 평가로 대체 가능하다.
+  message = done && '완료';
+
+  let none = false;
+  if (!none) message = '미완료';
+
+  // 논리합 연산자로 대체 가능
+  message = done || '미완료';
+  ```
+
+  꽤 유용하게 많이 쓰이는 방법이라 자주 써서 익히면 좋다.
+
+  ##### 객체를 가리키기를 기대하는 변수가 null 또는 undefined가 아닌지 확인하고 프로퍼티를 참조할 때
+
+  객체는 키와 값으로 구성된 프로퍼티의 집합이다. 객체를 가리키기를 기대하는 변수가 객체가 아니면 에러가 발생하는데 단축 평가를 사용하면 에러가 나지 않는다.
+
+  ```javascript
+  let elem = null;
+  let value = elem.value; // TypeError
+
+  let realValue = elem && elem.value; // null
+  ```
+
+- 옵셔널 체이닝 연산자
+  옵셔널 체이닝 연산자는 ES11에 도입된 것으로 `?.`로 좌항의 피연산자가 null 또는 undefined인 경우 undefined를 반환하고 그렇지 않으면 우항의 프로퍼티 참조를 이어간다.
+  도입되기 전에는 &&를 썼다.
+
+  ```javascript
+  let elem = null;
+  let value = elem?.value;
+  console.log(value); // undefined
+
+  let vv = elem && elem.value;
+  console.log(value); // null
+  ```
+
+  차이점은 &&는 좌항이 false면 좌항 연산자를 반환한다.
+  하지만 옵셔널 체이닝 연산자는 좌항이 false여도 null이나 undefined가 아니면 우항의 프로퍼티 참조를 이어간다.
+
+  ```javascript
+  let str = '';
+  let length = str && str.length;
+  console.log(length); // ''
+
+  // 옵셔널 체이닝의 경우
+  let length = str?.length;
+  console.log(length); // 0
+  ```
+
+  <br>
+
+- null 병합 연산자
+  ES11에서 도입된 null 병합 연산자 ??는 좌항의 피연산자가 null 또는 undefined인 경우 우항의 피연산자를 반환하고 아니면 좌항을 반환한다.
+  변수에 기본값을 설정할 때 유용하다.
+  도입되기 이전엔 ||를 사용했다.
+
+  ```javascript
+  let foo = null ?? 'default';
+  console.log(foo); // 'default'
+
+  // ||의 경우
+  let foo = '' || 'default';
+  console.log(foo); // default
+  ```
+
+  하지만 null 병합 연산자는 좌항이 false라도 null이나 undefined가 아니면 좌항을 그대로 반환한다.
+
+  ```javascript
+  let foo = '' ?? 'default';
+  console.log(foo); // ''
+  ```
+
+null 병합 연산자랑 단축 평가는 많이 보여서 자주 써서 익혀보자!
