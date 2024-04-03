@@ -11,3 +11,4 @@
 - [연산자](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/operator.md)
 - [반복문](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/controlFlow.md)
 - [타입 변환과 단축 평가](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/type.md)
+- [원시 값과 객체의 비교](https://github.com/yeonguk0201/study/blob/main/Front_End/JavaScript/primitive&object.md)
