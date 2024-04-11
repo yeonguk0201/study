@@ -1,6 +1,6 @@
 ### 데이터 타입과 변수
 
-![alt text](./Image/변수%20선언과%20할당의%20구조.png.png)
+![alt text](./Image/변수선언.png)
 
 <br>
 
