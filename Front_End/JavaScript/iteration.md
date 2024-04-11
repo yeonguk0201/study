@@ -5,7 +5,7 @@
 이터레이션이란 프로토콜은 ES6에서 도입되었으며 데이터 컬렉션을 순회하기 위한 프로토콜이다.
 for-of문으로 순회할 수 있다.
 
-- 이터러블
+- 이터러블  <br>
   위 프로토콜을 준수한 객체를 이터러블이라고 한다. 이터러블은 Symbol.iterator 메소드를 구현하거나 프로토타입 체인에 의해 상속한 객체를 말한다.
   배열은 Symbol.iterator 메소드를 소유해서 배열은 이터러블이다.
 
@@ -22,7 +22,7 @@ console.log(Symbol.iterator in array); //true
 
 </br>
 
-- 이터레이터
+- 이터레이터  <br>
   이터레이터 프로토콜은 next 메소드를 가지며 호출하면 이터러블을 순회하면서 value, done 프로퍼티를 갖는 객체를 반환한다.
   그러니까 이터레이터 프로토콜을 준수한 이터레이터는 next 메소드를 가진다.
 
@@ -72,7 +72,7 @@ ES6에서 제공하는 빌트인 이터러블은 다음과 같다.
 
 > > Array, String, Map, Set, TypedArray(Int8Array, Uint8Array, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array), DOM data structure(NodeList, HTMLCollection), Arguments
 
-- Map
+- Map  <br>
   키-값 쌍으로 이루어진 자료구조다. 중복된 키를 허용하지 않으며 순서가 정의되어 있지 않다.
 
   ```javascript
@@ -102,7 +102,7 @@ ES6에서 제공하는 빌트인 이터러블은 다음과 같다.
   }
   ```
 
-- Set
+- Set  <br>
   Set은 중복을 허용하지 않는 값들의 집합을 나타내는 자료구조로 순서는 정의되어 있지 않고 값의 고유성을 보장한다.
 
   ```javascript
@@ -132,7 +132,7 @@ ES6에서 제공하는 빌트인 이터러블은 다음과 같다.
 
   </br>
 
-  - Arguments
+  - Arguments  <br>
     인자는 함수 내부에서 사용되는 객체로 함수가 호출될 때 전달되는 인자들의 목록을 나타낸다.
     배열과 유사하게 인덱스로 접근 가능하지만, 배열이 아닌 유사 배열 객체이다.
 
