@@ -32,9 +32,9 @@ const ctx = canvas.getContext('2d');
     <title>Canvas tutorial</title>
     <script type="text/javascript">
       function draw() {
-        var canvas = document.getElementById('tutorial');
+        const canvas = document.getElementById('tutorial');
         if (canvas.getContext) {
-          var ctx = canvas.getContext('2d');
+          const ctx = canvas.getContext('2d');
         }
       }
     </script>
