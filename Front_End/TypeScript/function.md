@@ -146,3 +146,9 @@ class Handler {
 let handler = new Handler();
 uiElement.addClickListener(handler.onClick);
 ```
+
+<br>
+
+처음 코드에선 Handler 클래스에 있는 OnClick 메서드에서 this를 사용하려고 하는데 정작 interface에선 addClickListner 메서드의 콜백 함수의 this를 void로 선언해 this를 사용할 수 없는데 사용한다고 해서 오류가 났다.
+
+두 번째 코드는 this를 사용하지 않아서 오류가 나지 않는다.

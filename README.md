@@ -17,6 +17,8 @@
 
 - [타입스크립트란?](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/start.md)
 - [타입스크립트의 타입](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/type.md)
+- [타입스크립트 함수](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/function.md)
+- [인터페이스](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/interface.md)
 
 #### HTML
 
