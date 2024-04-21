@@ -26,3 +26,11 @@ https://developer.mozilla.org/ko/docs/Web/API/HTMLCanvasElement/getContext
 예시에서 나온 `CanvasRenderingContext2D.fillStyle` 프로퍼티는 색깔이나 그래디언트, 패턴등을 스타일 할 때 사용한다.
 
 `fillRext`메소드는 좌측 상단 (10, 10) 위치에 너비 150 높이 100인 사각형을 만든다.
+
+<br>
+<br>
+
+---
+
+예시 코드는 여기서 확인 할 수 있다. <br>
+https://developer.mozilla.org/ko/play
