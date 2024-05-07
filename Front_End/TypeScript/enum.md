@@ -86,3 +86,5 @@ enum Direction {
   Right = 'RIGHT',
 }
 ```
+
+또한, 문자형 이넘에는 숫자형 이넘과 다르게 auto-incrementing이 없다.
