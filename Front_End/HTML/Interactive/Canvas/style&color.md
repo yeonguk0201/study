@@ -139,4 +139,6 @@ function draw() {
 - **setLineDash** : 현재 선의 대시 패턴을 설정합니다.
 - **lineDashOffset** = value : 선의 대시 배열이 어디서 시작될지 지정합니다.
 
-1. lineWidth 예제
+<br>
+
+1. **lineWidth** 예제
