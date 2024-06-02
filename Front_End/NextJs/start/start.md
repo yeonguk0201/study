@@ -22,33 +22,33 @@ npm i react@latest next@latest react-dom@latest
 
 그리고 package.json에서 scripts 부분을 "dev": "next dev" 이걸로 바꾸면 dev라는 명령어가 next를 실행할 것이다. 실행된 next는 page라는 파일을 찾으려고 할 것이다. 그리고 그 page라는 파일은 app이라는 폴더 안에 있어야 하므로 그렇게 만들어 준다. tsx로 하든지 jsx로 하든지 그건 맘대로 하면 된다.
 
-![폴더구조](./Image/폴더구조.png)
+![폴더구조](../Image/폴더구조.png)
 
 <br>
 
 이제 만든 page 파일에서 export를 해보자. 이름은 중요하지 않지만 이 컴포넌트가 default로 export 돼야 한다.
 
-![export](./Image/export.png)
+![export](../Image/export.png)
 
 <br>
 
 그리고 npm run dev로 실행시켜주면!
 
-![터미널](./Image/터미널2.png)
+![터미널](../Image/터미널2.png)
 
 <br>
 
 이런 저런 설명이 나오면서 localhost 3000으로 된 것을 볼 수 있다!
 그럼 이제 저곳으로 가면
 
-![실행후](./Image/hello.png)
+![실행후](../Image/hello.png)
 
 짜잔! 아무것도 설정하지 않고 next만 설치했을 뿐인데 연결이 된 것을 확인할 수 있다!!
 
 <br>
 
 그리고 터미널을 확인해보면 이런 글귀를 볼 수 있다.
-![터미널](./Image/터미널.png)
+![터미널](../Image/터미널.png)
 
 app 폴더에 layout파일이 자동으로 설치되었다는 것을 확인할 수 있다!
 

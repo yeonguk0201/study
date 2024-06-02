@@ -39,5 +39,6 @@
 
 #### Next.JS
 
-- [Next 초기 설정 직접 해보기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/start.md)
-- [Next의 Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/routing.md)
+- [Next 초기 설정 직접 해보기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/start/start.md)
+- [Next의 Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/routing.md)
+- [Not found Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/not-found-routes.md)
