@@ -21,6 +21,8 @@
 - [타입스크립트 함수](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/function.md)
 - [인터페이스](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/interface.md)
 - [이넘](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/enum.md)
+- [연산자를 사용한 타입 정리](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/uniontype.md)
+- [클래스](https://github.com/yeonguk0201/study/blob/main/Front_End/TypeScript/class.md)
 
 ##### 리액트 프로젝트를 타입스크립트 적용시키면서 공부한 것들
 
@@ -42,3 +44,12 @@
 - [Next 초기 설정 직접 해보기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/start/start.md)
 - [Next의 Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/routing.md)
 - [Not found Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/not-found-routes.md)
+- [SSR과 CSR의 차이점](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/SSR&CSR.md)
+- [useclient란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/useclient.md)
+- [Layout 설정하기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/start/layout.md)
+- [Metadata란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/metadata.md)
+- [Dynamic Routes란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/dynamic-route.md)
+
+#### Three.Js
+
+- [Three.Js 초기 설정](https://github.com/yeonguk0201/study/blob/main/Front_End/ThreeJS/Install.md)
