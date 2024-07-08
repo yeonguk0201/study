@@ -29,7 +29,7 @@ export default async function MovieDetail({ params: { id } }: { params: { id: st
 }
 ```
 
-근데 이렇게 하면 처음 함수가 완료될 때 까지 다음 함수는 실행되지 않는다는 문제가 있다.
+근데 이렇게 하면 await을 각각 하니까 처음 함수가 완료될 때 까지 다음 함수는 실행되지 않는다는 문제가 있다.
 
 각 함수에
 
@@ -41,7 +41,7 @@ await을 추가해준다. 그리고 console도 찍어서 동시에 되는 지 �
 
 ![fetching](../Image/fetching.png)
 
-보면 이렇게 순차적으로 실행되는 것을 알 수 있다! 이러면 처음 함수가 느려지면 다음 함수의 실행도 느려지기 때문에 수정해주자.
+보면 이렇게 순차적으로 동기 실행되는 것을 알 수 있다! 이러면 처음 함수가 느려지면 다음 함수의 실행도 느려지기 때문에 수정해주자.
 
 <br>
 <br>
@@ -57,7 +57,7 @@ const videos = await getVideo(id);
 const [movie, videos] = await Promise.all([getMovie(id), getVideo(id)]);
 ```
 
-`Promise.all`은 함수들을 await 시키고 결과를 배열로 내보내기 때문에 배열로 정의해야 한다.
+`Promise.all`은 여러개의 Promise들을 비동기적으로 실행하고 결과를 배열로 내보내기 때문에 배열로 정의해야 한다.
 
 그리고 다시 콘솔을 확인해 보면 동시에 실행되는 것을 확인할 수 있다.
 
