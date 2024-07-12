@@ -41,14 +41,14 @@
 
 #### Next.JS
 
-- [Next 초기 설정 직접 해보기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/start/start.md)
-- [Next의 Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/routing.md)
-- [Not found Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/not-found-routes.md)
-- [SSR과 CSR의 차이점](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/SSR&CSR.md)
-- [useclient란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/useclient.md)
-- [Layout 설정하기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/start/layout.md)
-- [Metadata란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/metadata.md)
-- [Dynamic Routes란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/Routing/dynamic-route.md)
+- [Next 초기 설정 직접 해보기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/start/start.md)
+- [Next의 Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/routing.md)
+- [Not found Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/not-found-routes.md)
+- [SSR과 CSR의 차이점](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/SSR&CSR.md)
+- [useclient란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/useclient.md)
+- [Layout 설정하기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/start/layout.md)
+- [Metadata란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/metadata.md)
+- [Dynamic Routes란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/dynamic-route.md)
 
 #### Three.Js
 
