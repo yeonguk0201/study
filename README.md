@@ -41,14 +41,23 @@
 
 #### Next.JS
 
+##### 노마드 코더
+
 - [Next 초기 설정 직접 해보기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/start/start.md)
 - [Next의 Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/routing.md)
 - [Not found Routes](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/not-found-routes.md)
 - [SSR과 CSR의 차이점](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/SSR&CSR.md)
-- [useclient란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/useclient.md)
+- [useclient란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/useclient와hydration.md)
 - [Layout 설정하기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/start/layout.md)
 - [Metadata란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/metadata.md)
 - [Dynamic Routes란?](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Routing/dynamic-route.md)
+- [Client Side에서 fetch](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Data-fetching/client-side에서.md)
+- [Server component](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Data-fetching/server-component.md)
+- [로딩 컴포넌트](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Data-fetching/Loading-components.md)
+- [동시에 request하기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Data-fetching/parallel-request.md)
+- [Suspense](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Data-fetching/Suspense.md)
+- [에러 핸들링](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Data-fetching/errorHandling.md)
+- [Next에서 css module 사용하기](https://github.com/yeonguk0201/study/blob/main/Front_End/NextJs/노마더코드/Deployment/cssModule.md)
 
 #### Three.Js
 

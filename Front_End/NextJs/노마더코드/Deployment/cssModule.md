@@ -2,11 +2,11 @@
 
 Next에선 css 모듈을 별도의 설치 없이 바로 사용 가능하다.
 
-먼저 global css파일을 만들자. app에 바로 만들어도 상관없는데 styles라는 파일을 만들고 그 아래 만들겠다.
+먼저 global css파일을 만드려면 app에 바로 만들어도 상관없는데 styles라는 파일을 만들고 그 아래 만들어도 된다.
 
-그 다음엔 만든 css를 root인 layout에 import하자.
+만든 css를 root인 layout에 import하자.
 
-그러면 global css를 만들었다.
+---
 
 이번엔 css모듈이 어떻게 작동하는 지 알아보자.
 
@@ -43,7 +43,7 @@ export default function Navigation() {
     <nav className={styles.nav}>
 ```
 
-이렇게 `import styles하고 className을 styles.nav` 이렇게 한다.
+이렇게 `import styles`하고 `className을 styles.nav` 이렇게 한다.
 
 그러니까 inport styles 에서 styles를 모든 class들을 지닌 JavaScript Object라고 생각하자.
 
@@ -55,10 +55,18 @@ export default function Navigation() {
 중요한 건 모두 `.`으로 시작해서 class라는 것을 알려야 한다!
 그게 아니라면 global css나 이런데다가 넣어야 한다
 
-module.css는 클래스로!!
+> module.css는 클래스로 스타일을 만든다고 생각하자.
 
 ```typescript
   <li className={styles.list}>
 ```
 
 이런 식으로 class를 만들어서 넣는다고 생각하자.
+
+<br>
+<br>
+<br>
+
+물론 폴더 지정 방식은 다양하게 하면 된다. styles를 만들어서 따로 빼도 되고, 컴포넌트 폴더 안에 각 컴포넌트 폴더를 만들어서 그 안에 tsx랑 css 넣어도 된다.
+
+컴포넌트의 양이 적다면 한 styles 폴더 안에 다 넣어도 되겠지만 만약 components의 양이 많다면 각 conponents 폴더 안에 styles 파일을 넣으면 더 깔끔해 보일 것이다! 역시 이건 선택사항이다.
