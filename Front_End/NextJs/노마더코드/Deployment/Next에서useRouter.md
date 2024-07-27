@@ -1,4 +1,4 @@
-Next에서 useRouter을 썼다.
+### Next에서 useRouter을 썼다.
 
 ```typescript
 import Link from 'next/link';
@@ -27,10 +27,10 @@ export default function Movie({ title, id, poster_path }: MovieProps) {
 
 먼저 이렇게 했다. `useRouter`을 통해 클릭 시 동작할 함수를 만들어서 onClick이벤트 시 사용하게 하려고 했다.
 
-코드를 보면 import next/router 이라고 나와있는데 이러면 오류가 생긴다.
+코드를 보면 `import ~ next/router` 이라고 나와있는데 이러면 오류가 생긴다.
 
 ```
-Use next/navigation instead.
+Use next/navigation instead. 이라는 오류가 나온다.
 ```
 
 그래서 바꿔주지만 아직도 오류가 있다!
